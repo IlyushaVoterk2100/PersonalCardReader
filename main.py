@@ -11,8 +11,8 @@ def ConvertImage(image):
     return thresh
 
 def Start():
-    capture_one = cv2.VideoCapture(2)
-    capture_two = cv2.VideoCapture(3)
+    capture_one = cv2.VideoCapture(0)
+    capture_two = cv2.VideoCapture(1)
     while True:
 
         ret1, img1 = capture_one.read()
